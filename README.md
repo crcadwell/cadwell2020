@@ -24,7 +24,7 @@ General Organization of the Code
 ================================
 For quantitative analysis of clones and connectivity data, we used the [DataJoint](https://github.com/datajoint) data management framework implemented in Matlab, which utilizes a relational database model for organizing, populating, and querying data. 
 
-Analysis of gene expression data was performed using packages previously developed in R bioconductor.
+Analysis of gene expression data was performed using packages previously developed in R Bioconductor.
 
 Modeling of the cortical circuit was done in Python.
 
