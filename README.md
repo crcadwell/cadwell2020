@@ -22,14 +22,18 @@ Copyright 2020 C. R. Cadwell
    
 General Organization of the Code
 ================================
-For quantitative analysis of clones and connectivity data, we used the [DataJoint](https://github.com/datajoint) data management framework implemented in Matlab, which utilizes a relational database model for organizing, populating, and querying data. 
+
+For quantitative analysis of clones and connectivity data, we used the [DataJoint](https://github.com/datajoint) data management framework implemented in Matlab, which utilizes a relational database model for organizing, populating, and querying data.  
 
 Analysis of gene expression data was performed using packages previously developed in R Bioconductor.
 
 Modeling of the cortical circuit was done in Python.
 
+For efficiency, the data were also stored at different stages of analysis as .mat or .csv files. 
+
 Individual analysis steps
 -------------------------
+
 ###
 
 ###
@@ -38,6 +42,7 @@ DataJoint database structure
 --------------------------------
 
 ### Schema `mc`
+
 The following tables are most relevant:
 
 * `PatchCells`
