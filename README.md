@@ -34,7 +34,7 @@ Individual analysis steps
 
 ###
 
-Organization of DataJoint database structure
+DataJoint database structure
 --------------------------------
 
 ### Schema `mc`
