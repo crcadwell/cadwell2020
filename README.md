@@ -34,7 +34,7 @@ For efficiency, the data were also stored at different stages of analysis as .ma
 Individual analysis steps
 -------------------------
 
-### Reconstruciton of clones across slices (analyses used for Figure 1)
+### Reconstruction of clones across slices (analyses used for Figure 1)
 Tile scan Z-stacks of entire coronal sections were first maximially projected using the commercial acquisition software for the microscope. The positions of labeled cells were annotated using the following Matlab-based custom software:
 * `Segmentation.m` This code selects one maximally projected coronal section at a time, and has the user  manually outline the contours of the cortex, and mark the positions of cortical neurons by presenting small patches of the cortex area. The positions of annotated cortical neurons are saved to a separate file.  
 * `showImages.m` This code shows all annotated coronal sections for an entire mouse brain, including the outlines of the cortex and positions of the neurons identified above. The user can scroll through the slices to see how individual clones appear on adjacent sections.
