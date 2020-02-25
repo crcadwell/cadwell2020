@@ -29,7 +29,7 @@ Analysis of gene expression data was performed in R Bioconductor using custom so
 
 Modeling of the cortical circuit was done in Python using Jupyter Notebook.
 
-For efficiency, the data were stored at intermediated stages of analysis as .mat or .csv files. 
+For efficiency, the data were stored at intermediated stages of analysis as .mat, .txt, or .csv files. 
 
 Files related to Figure 1
 -------------------------
@@ -42,12 +42,25 @@ Tile scan Z-stacks of entire coronal sections were first maximially projected us
 ### Quantification of clones at P10 and E12.5
 * `CountCells.m` While active, this code will count the number of annotated neurons within an area selected by the user, while viewing an annotated coronal section.
 * `CloneQuantificaiton.mat` Saved variables used to generate Figure 1D-F and Figure 1-supplement 1C,D.
-* `Figure1DEFIJ S1CD` Code to generate Figure 1D-F,I,J and Figure 1-supplement 1C,D
+* `Figure1D-J S1CD.m` Code to generate Figure 1D-F,I,J and Figure 1-supplement 1C,D
 
 Files related to Figure 2
 -------------------------
 
-### 
+### Quality control of single-cell RNA-seq data, visualization using t-SNE, and generalized linear models to predict layer or region from gene expression data
+* `Figure2C-H S1 S2.rtf` Code to run in R Bioconductor to generate panels for Figure 2C-H, Figure 2-supplement 1 and Figure 2-supplement 2.
+* `countdata.txt`, `samplelist.txt`, `genelist.txt`, and `annotations.txt` Input data needed to run ananlysis and generate figure panels using above script in R. 
+* All other files in this folder are final or intermediate outputs of the above R script. 
+
+Files related to Figure 3
+-------------------------
+
+###
+
+Files related to Figures 4 and 5 and Table 1
+--------------------------------------
+
+
 
 DataJoint database structure
 --------------------------------
