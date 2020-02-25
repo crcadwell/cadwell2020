@@ -29,18 +29,25 @@ Analysis of gene expression data was performed in R Bioconductor using custom so
 
 Modeling of the cortical circuit was done in Python using Jupyter Notebook.
 
-For efficiency, the data were also stored at different stages of analysis as .mat or .csv files. 
+For efficiency, the data were stored at intermediated stages of analysis as .mat or .csv files. 
 
-Individual analysis steps
+Files related to Figure 1
 -------------------------
 
 ### Reconstruction of clones across slices (analyses used for Figure 1)
 Tile scan Z-stacks of entire coronal sections were first maximially projected using the commercial acquisition software for the microscope. The positions of labeled cells were annotated using the following Matlab-based custom software:
 * `Segmentation.m` This code selects one maximally projected coronal section at a time, and has the user  manually outline the contours of the cortex, and mark the positions of cortical neurons by presenting small patches of the cortex area. The positions of annotated cortical neurons are saved to a separate file.  
-* `showImages.m` This code shows all annotated coronal sections for an entire mouse brain, including the outlines of the cortex and positions of the neurons identified above. The user can scroll through the slices to see how individual clones appear on adjacent sections.
-* `CountCells.m` While active, this code will count the number of annotated neurons within an area selected by the user, while viewing an annotated coronal section. 
+* `showImages.m` This code shows all annotated coronal sections for an entire mouse brain, including the outlines of the cortex and positions of the neurons identified above. The user can scroll through the slices to see how individual clones appear on adjacent sections. These images are aligned manually across slices to visualize reconstructed clones shown in Figure 1B,C and Figure 1-supplement 1A,B.
 
-###
+### Quantification of clones at P10 and E12.5
+* `CountCells.m` While active, this code will count the number of annotated neurons within an area selected by the user, while viewing an annotated coronal section.
+* `CloneQuantificaiton.mat` Saved variables used to generate Figure 1D-F and Figure 1-supplement 1C,D.
+* `Figure1DEFIJ S1CD` Code to generate Figure 1D-F,I,J and Figure 1-supplement 1C,D
+
+Files related to Figure 2
+-------------------------
+
+### 
 
 DataJoint database structure
 --------------------------------
