@@ -55,7 +55,32 @@ Files related to Figure 2
 Files related to Figure 3
 -------------------------
 
-###
+### `data.mat` Contains the raw data (normalized logcounts,`counts`) and metadata for each of the 206 samples included in our Patch-seq dataset. Metadata includes the following pieces of information about each cell:
+* `exp` Experiment number.
+* `fp` Firing pattern.
+* `genes` Gene names for the data included in `counts`.
+* `label` Indicates whether the cell was labeled by a fluroscent indicator (`positive`) or not (`negative`).
+* `layer` Layer position of the cell.
+* `region` Brain region, if known (`V1` = primary visual cortex, `SS1` = primary somatosensory cortex).
+* `sample` Unique sample ID.
+* `slice` Slice number (numbering restarted for each animal).
+* `subject` Unique animal ID. 
+
+### `allenData.mat` Contains our t-SNE projection data for the reference dataset from Tasic et al.2018.
+* `allentsne` Contains the x and y t-SNE corrdinates for each cell in the reference atlas. The third column is the cluster ID. 
+* `allentsneNames` Names of cell clusters for each cell in the reference atlas.
+* `allentsneColor` RGB values for each cell in the reference atlas. 
+
+### `columnProjection.mat` Contains the t-SNE projection data for mapping our Patch-seq dataset onto the reference atlas.
+* `cProj` Contains the x and y t-SNE coordinates for each cell in our Patch-seq dataset. The third column is a measure of uncertainty of the mapping (see Methods section of paper for how this is computed, larger values indicate greater uncertainty).
+
+### `classAssignments` Shows the best matching transcriptomic cluster in the reference atlas for each cell in our Patch-seq dataset. Cluster names and cluster IDs are the same as those used in Tasic et al., 2018. 
+* `class` Name of the best-matched transcriptomic cluster for each Patch-seq cell.
+* `classID` Cluster ID of the best-matched transcriptomic cluster for each Patch-seq cell. 
+
+### `Figure3.m` Script for generating figure panels in Figure 3, Figure 3-supplement 1, and Figure 3-supplement 2. 
+
+### `ChiSquared` Function for computing the chi squared statistic, referred to in `Figure3.m`.
 
 Files related to Figures 4 and 5 and Table 1
 --------------------------------------
