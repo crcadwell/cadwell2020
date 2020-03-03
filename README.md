@@ -91,7 +91,7 @@ DataJoint database structure
 --------------------------------
 ### Schema `mc`
 
-[mcSchema](https://github.com/crcadwell/cadwell2020/tree/master/Figures/'Figures%204%20and%205%20and%20Table%201'/mcSchema.png
+[mcSchema](https://github.com/crcadwell/cadwell2020/tree/master/Figures/Figures4-5-Table1/mcSchema.png
 
 
 The following tables are most relevant:
