@@ -55,7 +55,8 @@ Files related to Figure 2
 Files related to Figure 3
 -------------------------
 
-### `data.mat` Contains the raw data (normalized logcounts,`counts`) and metadata for each of the 206 samples included in our Patch-seq dataset. Metadata includes the following pieces of information about each cell:
+### `data.mat` 
+Contains the raw data (normalized logcounts,`counts`) and metadata for each of the 206 samples included in our Patch-seq dataset. Metadata includes the following pieces of information about each cell:
 * `exp` Experiment number.
 * `fp` Firing pattern.
 * `genes` Gene names for the data included in `counts`.
@@ -66,29 +67,49 @@ Files related to Figure 3
 * `slice` Slice number (numbering restarted for each animal).
 * `subject` Unique animal ID. 
 
-### `allenData.mat` Contains our t-SNE projection data for the reference dataset from Tasic et al.2018.
+### `allenData.mat` 
+Contains our t-SNE projection data for the reference dataset from Tasic et al.2018.
 * `allentsne` Contains the x and y t-SNE corrdinates for each cell in the reference atlas. The third column is the cluster ID. 
 * `allentsneNames` Names of cell clusters for each cell in the reference atlas.
 * `allentsneColor` RGB values for each cell in the reference atlas. 
 
-### `columnProjection.mat` Contains the t-SNE projection data for mapping our Patch-seq dataset onto the reference atlas.
+### `columnProjection.mat` 
+Contains the t-SNE projection data for mapping our Patch-seq dataset onto the reference atlas.
 * `cProj` Contains the x and y t-SNE coordinates for each cell in our Patch-seq dataset. The third column is a measure of uncertainty of the mapping (see Methods section of paper for how this is computed, larger values indicate greater uncertainty).
 
-### `classAssignments` Shows the best matching transcriptomic cluster in the reference atlas for each cell in our Patch-seq dataset. Cluster names and cluster IDs are the same as those used in Tasic et al., 2018. 
+### `classAssignments.mat` 
+Shows the best matching transcriptomic cluster in the reference atlas for each cell in our Patch-seq dataset. Cluster names and cluster IDs are the same as those used in Tasic et al., 2018. 
 * `class` Name of the best-matched transcriptomic cluster for each Patch-seq cell.
 * `classID` Cluster ID of the best-matched transcriptomic cluster for each Patch-seq cell. 
 
-### `Figure3.m` Script for generating figure panels in Figure 3, Figure 3-supplement 1, and Figure 3-supplement 2. 
-
-### `ChiSquared` Function for computing the chi squared statistic, referred to in `Figure3.m`.
+### `Figure3.m` 
+Script for generating figure panels in Figure 3, Figure 3-supplement 1, and Figure 3-supplement 2. 
 
 Files related to Figures 4 and 5 and Table 1
 --------------------------------------
+### Analysis of layer-specific connectivity rates (Figures 4 and 5)
+* `Sort.m` Code for sorting connectivity data into layer-specific groups, a 3x3 matrix representing each layer combination.
+* `Groups.mat` Connections sorted into layer-specific groups.
+* `allCounts.mat` Summary of number of connections, with a 3x3 matric for each layer combination in each of the following categories:
+- `biConnR`: Related pairs with bidirectional connections.
+- `biConnU`: Unrelated pairs with bidirectional connections. 
+- `biUnconnR`: Related pairs without bidirenctional connections. 
+- `biUnconnU`: Unrelated pairs without bidirectional connections. 
+- `connR`: Related pairs with connection.
+- `connU`: Unrelated pairs with connection.
+- `unconnR`: Related pairs without connection. 
+- `unconnU`: Unrelated pairs without connection.
+* 
 
+Util
+----
+Custom-written functions used by multiple files above:
 
+### `ChiSquared.m` 
+Computes the Chi-squared test statistic and p-value.
 
 DataJoint database structure
---------------------------------
+----------------------------
 ### Schema `mc`
 
 ![mcSchema](mcSchema.png)
