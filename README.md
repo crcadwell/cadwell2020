@@ -91,8 +91,8 @@ Files related to Figures 4 and 5 and Table 1
 * `Sort.m` Code for sorting connectivity data into layer-specific groups, a 3x3 matrix representing each layer combination.
 * `Groups.mat` Connections sorted into layer-specific groups.
 * `allCounts.mat` Summary of number of connections, with a 3x3 matric for each layer combination in each of the following categories:
-- `biConnR`: Related pairs with bidirectional connections.
-- `biConnU`: Unrelated pairs with bidirectional connections. 
+-- `biConnR`: Related pairs with bidirectional connections.
+   - `biConnU`: Unrelated pairs with bidirectional connections. 
 - `biUnconnR`: Related pairs without bidirenctional connections. 
 - `biUnconnU`: Unrelated pairs without bidirectional connections. 
 - `connR`: Related pairs with connection.
