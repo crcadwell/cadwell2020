@@ -20,8 +20,8 @@ Copyright 2020 C. R. Cadwell
    See the License for the specific language governing permissions and
    limitations under the License.
    
-General Organization of the Code
-================================
+General Organization
+====================
 
 For quantitative analysis of clones and connectivity data, we used the Matlab implementation of [DataJoint](https://github.com/datajoint), which utilizes a relational database model for organizing, populating, and querying data. The DataJoint schemas are archived at atlab/commons and the critical tables for our analyses are described below.  
 
@@ -89,8 +89,10 @@ Files related to Figures 4 and 5 and Table 1
 
 DataJoint database structure
 --------------------------------
-
 ### Schema `mc`
+
+[mcSchema](https://github.com/crcadwell/cadwell2020/Figures 4 and 5 and Table 1/mcSchema.png
+
 
 The following tables are most relevant:
 
