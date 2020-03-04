@@ -134,6 +134,6 @@ DataJoint database structure
 
 ![mcSchema](mcSchema.png)
 
-Detailed table definitions can be found at [`atlab/commons`](https://github.com/atlab/commons/schemas/mc)
+Detailed table definitions can be found at [atlab/commons](https://github.com/atlab/commons/schemas/mc)
 
 
