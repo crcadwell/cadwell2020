@@ -104,13 +104,12 @@ Files related to Figures 4 and 5 and Table 1
    - `unconnR`: Related pairs without connection. 
    - `unconnU`: Unrelated pairs without connection.   
 
-### Simple model of connectivity (Figure 4G and 5E)
+### Simple model of connectivity (Figures 4G and 5E)
 You need `docker` and `docker-compose` installed. All files are in the folder `Connectivity`.
 * Run `docker-compose up`. This will start a jupyter notebook server and a mysql server in docker files.
 * Open your browser and go to `localhost:8888`.
 * Open the notebook `Main.ipynb` in the browser and execute all cells (SHIFT-ENTER).
 * This will generate the file `expected_input_2019-06-04_FS.csv` in the `data` directory. 
-* `expected_input_2019-06-04_FS.csv` Output of model using the parameters used for the paper. 
 
 ### Analysis of connectivity using distance-matched controls (Figure 5 - supplement 2)
 * `Resample.m` Code for generating resampled data.
@@ -123,7 +122,8 @@ You need `docker` and `docker-compose` installed. All files are in the folder `C
 * `Power`, `FoldChange`, and `Prl` are output of 'PowerAnalysis.rtf`. 
 
 ### Figure panels
-* `Figures4DEFG5CDEFS2S3.m` Code to generate Figure 4D-G, Figure 5C-F, Figure 5-supplement 2,  Figure 5-supplement 3, and generalized linear model shown in Table 1.
+* `Figures4DEF5CDFS2S3.m` Code to generate Figure 4D-G, Figure 5C-F, Figure 5-supplement 2,  Figure 5-supplement 3, and generalized linear model shown in Table 1.
+* `Figure4G5E.m` Code used for plotting panel panels 4G and 5E. 
 * `Figure5S1` Code to generate Figure 5 - supplement 1. 
 
 Util
