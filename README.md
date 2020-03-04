@@ -105,8 +105,12 @@ Files related to Figures 4 and 5 and Table 1
    - `unconnU`: Unrelated pairs without connection.   
 
 ### Simple model of connectivity (Figure 4G and 5E)
-* PENDING FABIAN TO ADD HERE
-* `expected_input_2019-06-04_FS.csv` Output of model using a range of parameters. 
+You need `docker` and `docker-compose` installed. All files are in the folder `Connectivity`.
+* Run `docker-compose up`. This will start a jupyter notebook server and a mysql server in docker files.
+* Open your browser and go to `localhost:8888`.
+* Open the notebook `Main.ipynb` in the browser and execute all cells (SHIFT-ENTER).
+* This will generate the file `expected_input_2019-06-04_FS.csv` in the `data` directory. 
+* `expected_input_2019-06-04_FS.csv` Output of model using the parameters used for the paper. 
 
 ### Analysis of connectivity using distance-matched controls (Figure 5 - supplement 2)
 * `Resample.m` Code for generating resampled data.
