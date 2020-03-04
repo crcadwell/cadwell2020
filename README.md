@@ -55,7 +55,9 @@ Files related to Figure 2
 Files related to Figure 3
 -------------------------
 
-### PENDING DMITRY TO ADD HERE
+### t-SNE projection of Patch-seq data onto reference atlas and transcriptomic cluster assignment of each cell 
+* `rnaseqTools.py` Useful functions for RNA-seq analysis used copied from other repositories of [dkobak](https://github.com/dkobak).
+* `microcolumns.ipynb` Python notebook for t-SNE projection and transcipitomic cluster assignment. 
 
 ### `data.mat` 
 Contains the raw data (normalized logcounts,`counts`) and metadata for each of the 206 samples included in our Patch-seq dataset. Metadata includes the following pieces of information about each cell:
