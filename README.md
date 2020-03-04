@@ -55,6 +55,8 @@ Files related to Figure 2
 Files related to Figure 3
 -------------------------
 
+### PENDING DMITRY TO ADD HERE
+
 ### `data.mat` 
 Contains the raw data (normalized logcounts,`counts`) and metadata for each of the 206 samples included in our Patch-seq dataset. Metadata includes the following pieces of information about each cell:
 * `exp` Experiment number.
@@ -91,15 +93,32 @@ Files related to Figures 4 and 5 and Table 1
 * `Sort.m` Code for sorting connectivity data into layer-specific groups, a 3x3 matrix representing each layer combination.
 * `Groups.mat` Connections sorted into layer-specific groups.
 * `allCounts.mat` Summary of number of connections, with a 3x3 matric for each layer combination in each of the following categories:
--- `biConnR`: Related pairs with bidirectional connections.
+   - `biConnR`: Related pairs with bidirectional connections.
    - `biConnU`: Unrelated pairs with bidirectional connections. 
-- `biUnconnR`: Related pairs without bidirenctional connections. 
-- `biUnconnU`: Unrelated pairs without bidirectional connections. 
-- `connR`: Related pairs with connection.
-- `connU`: Unrelated pairs with connection.
-- `unconnR`: Related pairs without connection. 
-- `unconnU`: Unrelated pairs without connection.
-* 
+   - `biUnconnR`: Related pairs without bidirenctional connections. 
+   - `biUnconnU`: Unrelated pairs without bidirectional connections. 
+   - `connR`: Related pairs with connection.
+   - `connU`: Unrelated pairs with connection.
+   - `unconnR`: Related pairs without connection. 
+   - `unconnU`: Unrelated pairs without connection.   
+
+### Simple model of connectivity (Figure 4G and 5E)
+* PENDING FABIAN TO ADD CODE
+* `expected_input_2019-06-04_FS.csv` Output of model using a range of parameters. 
+
+### Analysis of connectivity using distance-matched controls (Figure 5 - supplement 2)
+* `Resample.m` Code for generating resampled data.
+* `ResampledData.mat` Resampled data generated using `Resample.m`.
+* `TwoSided.m` Code to generate two-sided p-values for resampled data. 
+* `TwoSided.mat` Two sided p-values generated using `TwoSided.m`. 
+
+### Power analysis (Figure 5 - Supplement 1)
+* `PowerAnalysis.rtf` Code used for power analysis in R.
+* `Power`, `FoldChange`, and `Prl` are output of 'PowerAnalysis.rtf`. 
+
+### Figure panels
+* `Figures4DEFG5CDEFS2S3.m` Code to generate Figure 4D-G, Figure 5C-F, Figure 5-supplement 2,  Figure 5-supplement 3, and generalized linear model shown in Table 1.
+* `Figure5S1` Code to generate Figure 5 - supplement 1. 
 
 Util
 ----
@@ -110,12 +129,11 @@ Computes the Chi-squared test statistic and p-value.
 
 DataJoint database structure
 ----------------------------
+
 ### Schema `mc`
 
 ![mcSchema](mcSchema.png)
 
+Detailed table definitions can be found at [`atlab/commons`](https://github.com/atlab/commons/schemas/mc)
 
-The following tables are most relevant:
-
-* `PatchCells`
 
