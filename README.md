@@ -103,7 +103,7 @@ Files related to Figures 4 and 5 and Table 1
    - `unconnU`: Unrelated pairs without connection.   
 
 ### Simple model of connectivity (Figure 4G and 5E)
-* PENDING FABIAN TO ADD CODE
+* PENDING FABIAN TO ADD HERE
 * `expected_input_2019-06-04_FS.csv` Output of model using a range of parameters. 
 
 ### Analysis of connectivity using distance-matched controls (Figure 5 - supplement 2)
